@@ -15,6 +15,7 @@ const Post: React.FC<PostProps> = ({
 }) => {
   const [likesCounter, setLikesCounter] = useState<number>(0);
   const [userDidLike, setuserDidLike] = useState<boolean>(didLike);
+  
   useEffect(() => {
     setLikesCounter(likes);
   }, [likes]);

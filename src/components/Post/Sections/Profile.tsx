@@ -11,8 +11,8 @@ export const Profile: React.FC<ProfileProps> = ({
   shopName,
   date,
 }) => {
-  const isoDate = date;
-  const newDate = new Date(isoDate);
+  const strDate = date;
+  const newDate = new Date(strDate);
   const formattedDate = newDate.toLocaleDateString("en-GB");
   return (
     <div className="flex flex-row items-center gap-4 h-[40px] w-[379px] px-8">
